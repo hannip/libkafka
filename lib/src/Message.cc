@@ -52,6 +52,7 @@ Message::Message(Packet *packet, long int offset) : WireFormatter(), PacketWrite
 
   // Kafka Protocol: bytes key
   this->keyLength = this->packet->readInt32();
+  if (this->keyLength < 0) this->keyLength = 0;
   this->key = this->packet->readBytes(this->keyLength);
 
   // Kafka Protocol: bytes value
