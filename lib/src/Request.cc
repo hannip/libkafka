@@ -48,7 +48,7 @@ Request::Request(unsigned char *buffer, bool releaseBuffer) : RequestOrResponse(
   this->clientId = this->packet->readString();
 }
 
-Request::Request(short int apiKey, short int apiVersion, int correlationId, string clientId) : RequestOrResponse()
+Request::Request(short int apiKey, short int apiVersion, int correlationId, string clientId, int packetBufferSize) : RequestOrResponse(packetBufferSize)
 {
   D(cout.flush() << "--------------Request(params)\n";)
 

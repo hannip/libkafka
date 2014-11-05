@@ -41,9 +41,9 @@ RequestOrResponse::RequestOrResponse(unsigned char *buffer, bool releaseBuffer) 
   // Kafka Protocol: int32 size - managed within the Packet class
 }
 
-RequestOrResponse::RequestOrResponse() : WireFormatter()
+RequestOrResponse::RequestOrResponse(int packetBufferSize) : WireFormatter()
 {
-  this->packet = new Packet();
+  this->packet = new Packet(packetBufferSize);
 
   D(cout.flush() << "--------------RequestOrResponse(params)\n";)
 }

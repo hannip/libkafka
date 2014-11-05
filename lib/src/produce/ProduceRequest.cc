@@ -51,7 +51,7 @@ namespace LibKafka {
     this->releaseArrays = true;
   }
 
-  ProduceRequest::ProduceRequest(int correlationId, std::string clientId, short int requiredAcks, int timeout, int produceTopicArraySize, TopicNameBlock<ProduceMessageSet>** produceTopicArray, bool releaseArrays) : Request(ApiConstants::PRODUCE_REQUEST_KEY, ApiConstants::API_VERSION, correlationId, clientId)
+  ProduceRequest::ProduceRequest(int correlationId, std::string clientId, short int requiredAcks, int timeout, int produceTopicArraySize, TopicNameBlock<ProduceMessageSet>** produceTopicArray, bool releaseArrays, int packetBufferSize) : Request(ApiConstants::PRODUCE_REQUEST_KEY, ApiConstants::API_VERSION, correlationId, clientId, packetBufferSize)
   {
     D(cout.flush() << "--------------ProduceRequest(params)\n";)
 

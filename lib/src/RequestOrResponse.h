@@ -38,7 +38,7 @@ class RequestOrResponse : public WireFormatter, public PacketWriter
 {
   public:
 
-    RequestOrResponse();
+    RequestOrResponse(int packetBufferSize = Packet::DEFAULT_BUFFER_SIZE);
     RequestOrResponse(unsigned char *buffer, bool releaseBuffer = false);
     ~RequestOrResponse();
 
