@@ -42,7 +42,7 @@ class Packet : public WireFormatter
 
     Packet(int bufferSize = DEFAULT_BUFFER_SIZE);
     Packet(unsigned char *buffer, bool releaseBuffer = false);
-    ~Packet();
+    virtual ~Packet();
 
     unsigned char *getBuffer() { return this->buffer; }
     unsigned char *getHead() { return this->head; }

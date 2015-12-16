@@ -46,7 +46,7 @@ class MessageSet: public WireFormatter, public PacketWriter
 
     MessageSet(int messageSetSize, Packet *packet);
     MessageSet(int messageSetSize, std::vector<Message*> messages, bool releaseArrays = false);
-    ~MessageSet();
+    virtual ~MessageSet();
 
     unsigned char* toWireFormat(bool updatePacketSize = true);
     int getWireFormatSize(bool includePacketSize = false);

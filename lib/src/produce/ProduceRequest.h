@@ -48,7 +48,7 @@ class ProduceRequest : public Request
 
     ProduceRequest(unsigned char *buffer, bool releaseBuffer = false);
     ProduceRequest(int correlationId, std::string clientId, short int requiredAcks, int timeout, int produceTopicArraySize, TopicNameBlock<ProduceMessageSet> **produceTopicArray, bool releaseArrays = false, int packetBufferSize=Packet::DEFAULT_BUFFER_SIZE);
-    ~ProduceRequest();
+    virtual ~ProduceRequest();
 
     unsigned char* toWireFormat(bool updatePacketSize = true);
     int getWireFormatSize(bool includePacketSize = true);
