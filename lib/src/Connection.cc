@@ -155,7 +155,7 @@ int Connection::write(int numBytes, unsigned char* buffer)
 {
   D(cout.flush() << "--------------Connection::write(" << numBytes << ")\n";)
 
-    int flags = 0;
+    int flags = MSG_NOSIGNAL;
   int numBytesSent = (int)::send(this->socketFd, (const void*)buffer, (ssize_t)numBytes, flags);
   if (numBytesSent == WRITE_ERROR) { E("Connection::write():error:" << strerror(errno) << "\n"); }
   D(cout.flush() << "--------------Connection::write(" << numBytes << "):wrote " << numBytesSent << "bytes\n";)
