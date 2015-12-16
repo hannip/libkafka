@@ -70,6 +70,6 @@ class Connection
 
 std::ostream& operator<< (std::ostream& os, const Connection& c);
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* CONNECTION_H */

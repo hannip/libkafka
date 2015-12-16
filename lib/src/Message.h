@@ -71,6 +71,6 @@ std::ostream& operator<< (std::ostream& os, const Message& t);
 inline bool operator==(const Message& lhs, const Message& rhs) { return ((lhs.crc==rhs.crc)&&(lhs.magicByte==rhs.magicByte)&&(lhs.attributes==rhs.attributes)&&(lhs.keyLength==rhs.keyLength)&&(lhs.valueLength==rhs.valueLength)); }
 inline bool operator!=(const Message& lhs, const Message& rhs) { return !operator==(lhs,rhs); }
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* MESSAGE_H */

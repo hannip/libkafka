@@ -151,6 +151,6 @@ namespace LibKafka {
   template<class SubBlockArrayClass>
   inline bool operator!=(const TopicNameBlock<SubBlockArrayClass>& lhs, const TopicNameBlock<SubBlockArrayClass>& rhs) { return !operator==(lhs,rhs); }
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* TOPICNAMEBLOCK_H */

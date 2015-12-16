@@ -65,6 +65,6 @@ std::ostream& operator<< (std::ostream& os, const TopicMetadata& b);
 inline bool operator==(const TopicMetadata& lhs, const TopicMetadata& rhs) { return ((lhs.topicErrorCode==rhs.topicErrorCode)&&(lhs.topicName==rhs.topicName)); }
 inline bool operator!=(const TopicMetadata& lhs, const TopicMetadata& rhs) { return !operator==(lhs,rhs); }
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* TOPICMETADATA_H */

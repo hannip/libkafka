@@ -63,6 +63,6 @@ std::ostream& operator<< (std::ostream& os, const ProduceResponsePartition& pm);
 inline bool operator==(const ProduceResponsePartition& lhs, const ProduceResponsePartition& rhs) { return ((lhs.partition==rhs.partition)&&(lhs.errorCode==rhs.errorCode)&&(lhs.offset==rhs.offset)); }
 inline bool operator!=(const ProduceResponsePartition& lhs, const ProduceResponsePartition& rhs) { return !operator==(lhs,rhs); }
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* PRODUCERESPONSEPARTITION_H */

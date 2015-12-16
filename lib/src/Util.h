@@ -35,7 +35,7 @@ namespace LibKafka {
   std::string intArrayToString(int* i, int size);
   std::string longIntArrayToString(long int* i, int size);
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #ifndef ntohll
 #define ntohll(x) ( ( (uint64_t)(ntohl( (uint32_t)((x << 32) >> 32) )) << 32) | ntohl( ((uint32_t)(x >> 32)) ) )                                        

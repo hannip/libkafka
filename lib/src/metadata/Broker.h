@@ -55,6 +55,6 @@ std::ostream& operator<< (std::ostream& os, const Broker& b);
 inline bool operator==(const Broker& lhs, const Broker& rhs) { return ((lhs.nodeId==rhs.nodeId)&&(lhs.port==rhs.port)&&(lhs.host==rhs.host)); }
 inline bool operator!=(const Broker& lhs, const Broker& rhs) { return !operator==(lhs,rhs); }
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* BROKER_H */

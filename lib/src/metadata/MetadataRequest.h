@@ -54,6 +54,6 @@ class MetadataRequest : public Request
 
 std::ostream& operator<< (std::ostream& os, const MetadataRequest& mr);
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif

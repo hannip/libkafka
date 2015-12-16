@@ -58,6 +58,6 @@ class OffsetResponse : public Response
 
 std::ostream& operator<< (std::ostream& os, const OffsetResponse& fr);
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* OFFSET_RESPONSE_H */

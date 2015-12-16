@@ -41,6 +41,6 @@ class PacketWriter
     Packet *packet;
 };
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* PACKET_WRITER_H */

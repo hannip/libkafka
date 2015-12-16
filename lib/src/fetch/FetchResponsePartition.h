@@ -66,6 +66,6 @@ std::ostream& operator<< (std::ostream& os, const FetchResponsePartition& frm);
 inline bool operator==(const FetchResponsePartition& lhs, const FetchResponsePartition& rhs) { return ((lhs.partition==rhs.partition)&&(lhs.errorCode==rhs.errorCode)&&(lhs.highwaterMarkOffset==rhs.highwaterMarkOffset)&&(lhs.highwaterMarkOffset==rhs.highwaterMarkOffset)&&(lhs.messageSetSize==rhs.messageSetSize)); }
 inline bool operator!=(const FetchResponsePartition& lhs, const FetchResponsePartition& rhs) { return !operator==(lhs,rhs); }
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* FETCHRESPONSEPARTITION_H */

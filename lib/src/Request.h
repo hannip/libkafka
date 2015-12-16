@@ -49,6 +49,6 @@ class Request : public RequestOrResponse
 
 std::ostream& operator<< (std::ostream& os, const Request& r);
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif

@@ -37,6 +37,6 @@ class ErrorHandler
     virtual bool hasErrorCode() = 0;
 };
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* ERROR_HANDLER_H */

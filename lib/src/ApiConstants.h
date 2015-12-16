@@ -91,6 +91,6 @@ namespace LibKafka {
 
       const static char *errorStringLookupTable[];
   };
-};
+} // namespace LibKafka
 
 #endif

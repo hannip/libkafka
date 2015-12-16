@@ -68,6 +68,6 @@ class Client
     template <typename RequestClass, typename ResponseClass> ResponseClass *apiCall(RequestClass *request);
 };
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* CONNECTION_H */

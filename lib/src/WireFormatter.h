@@ -38,6 +38,6 @@ class WireFormatter
     virtual int getWireFormatSize(bool includePacketSize = true) = 0;
 };
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* WIRE_FORMATTER_H */

@@ -57,6 +57,6 @@ std::ostream& operator<< (std::ostream& os, const OffsetPartition& fp);
 inline bool operator==(const OffsetPartition& lhs, const OffsetPartition& rhs) { return ((lhs.partition==rhs.partition)&&(lhs.time==rhs.time)&&(lhs.maxNumberOfOffsets==rhs.maxNumberOfOffsets)); }
 inline bool operator!=(const OffsetPartition& lhs, const OffsetPartition& rhs) { return !operator==(lhs,rhs); }
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* OFFSETPARTITION_H */

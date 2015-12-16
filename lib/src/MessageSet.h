@@ -62,6 +62,6 @@ std::ostream& operator<< (std::ostream& os, const MessageSet& t);
 inline bool operator==(const MessageSet& lhs, const MessageSet& rhs) { return ((lhs.messageSetSize==rhs.messageSetSize)&&(lhs.messages.size()==rhs.messages.size())); }
 inline bool operator!=(const MessageSet& lhs, const MessageSet& rhs) { return !operator==(lhs,rhs); }
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* MESSAGESET_H */

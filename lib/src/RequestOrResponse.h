@@ -50,6 +50,6 @@ class RequestOrResponse : public WireFormatter, public PacketWriter
 
 std::ostream& operator<< (std::ostream& os, const RequestOrResponse& r);
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif

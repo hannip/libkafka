@@ -95,6 +95,6 @@ class Packet : public WireFormatter
     bool releaseBuffer;
 };
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* PACKET_H */

@@ -58,6 +58,6 @@ class FetchResponse : public Response
 
 std::ostream& operator<< (std::ostream& os, const FetchResponse& fr);
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* FETCH_RESPONSE_H */

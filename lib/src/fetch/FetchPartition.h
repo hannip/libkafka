@@ -57,6 +57,6 @@ std::ostream& operator<< (std::ostream& os, const FetchPartition& fp);
 inline bool operator==(const FetchPartition& lhs, const FetchPartition& rhs) { return ((lhs.partition==rhs.partition)&&(lhs.fetchOffset==rhs.fetchOffset)&&(lhs.maxBytes==rhs.maxBytes)); }
 inline bool operator!=(const FetchPartition& lhs, const FetchPartition& rhs) { return !operator==(lhs,rhs); }
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* FETCHPARTITION_H */

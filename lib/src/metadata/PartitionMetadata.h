@@ -67,6 +67,6 @@ std::ostream& operator<< (std::ostream& os, const PartitionMetadata& b);
 inline bool operator==(const PartitionMetadata& lhs, const PartitionMetadata& rhs) { return ((lhs.partitionErrorCode==rhs.partitionErrorCode)&&(lhs.partitionId==rhs.partitionId)&&(lhs.leader==rhs.leader)); }
 inline bool operator!=(const PartitionMetadata& lhs, const PartitionMetadata& rhs) { return !operator==(lhs,rhs); }
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* PARTITIONMETADATA_H */

@@ -62,6 +62,6 @@ class ProduceRequest : public Request
 
 std::ostream& operator<< (std::ostream& os, const ProduceRequest& pr);
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif

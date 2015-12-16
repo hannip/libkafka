@@ -60,6 +60,6 @@ class MetadataResponse : public Response
 
 std::ostream& operator<< (std::ostream& os, const MetadataResponse& mr);
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* METADATARESPONSE_H */

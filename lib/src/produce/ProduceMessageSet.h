@@ -67,6 +67,6 @@ std::ostream& operator<< (std::ostream& os, const ProduceMessageSet& pm);
 inline bool operator==(const ProduceMessageSet& lhs, const ProduceMessageSet& rhs) { return ((lhs.partition==rhs.partition)&&(lhs.messageSetSize==rhs.messageSetSize)); }
 inline bool operator!=(const ProduceMessageSet& lhs, const ProduceMessageSet& rhs) { return !operator==(lhs,rhs); }
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* PRODUCEMESSAGESET_H */

@@ -58,6 +58,6 @@ class FetchRequest : public Request
 
 std::ostream& operator<< (std::ostream& os, const FetchRequest& fr);
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif

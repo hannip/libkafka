@@ -58,6 +58,6 @@ class ProduceResponse : public Response
 
 std::ostream& operator<< (std::ostream& os, const ProduceResponse& mr);
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif /* PRODUCE_RESPONSE_H */

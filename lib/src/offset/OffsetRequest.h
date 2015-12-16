@@ -56,6 +56,6 @@ class OffsetRequest : public Request
 
 std::ostream& operator<< (std::ostream& os, const OffsetRequest& ofr);
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif

@@ -48,6 +48,6 @@ class Response : public RequestOrResponse
 
 std::ostream& operator<< (std::ostream& os, const Response& r);
 
-}; // namespace LibKafka
+} // namespace LibKafka
 
 #endif
