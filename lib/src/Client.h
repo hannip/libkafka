@@ -56,13 +56,17 @@ class Client
     FetchResponse *sendFetchRequest(FetchRequest *request);
     OffsetResponse *sendOffsetRequest(OffsetRequest *request);
 
+    std::string & getBrokerHost() { return brokerHost; }
+    int getBrokerPort() { return brokerPort; }
+    Connection *getConnection() { return connection; }
+    bool prepareConnection();
+
   protected:
 
     Connection *connection;
     std::string brokerHost;
     int brokerPort;
 
-    bool prepareConnection();
     int sendRequest(Request *request);
     template <typename ResponseClass> ResponseClass *receiveResponse();
     template <typename RequestClass, typename ResponseClass> ResponseClass *apiCall(RequestClass *request);
